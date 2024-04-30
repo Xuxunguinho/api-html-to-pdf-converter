@@ -59,7 +59,8 @@ namespace apiConverterHtmlToPdf.Application.Services
                 if (dto.PaperFormat.HasValue)
                     setting.SetPaperFormat(dto.PaperFormat.Value);
 
-            var pattern = 0.393701;
+            //var pattern = 0.393701;
+            var pattern = 1;
 
             if (dto.Width.HasValue)
                 setting.PaperWidth = dto.Width.Value * pattern;
