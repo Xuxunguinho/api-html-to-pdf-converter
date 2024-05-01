@@ -59,6 +59,7 @@ namespace apiConverterHtmlToPdf.Application.Services
                 if (dto.PaperFormat.HasValue)
                     setting.SetPaperFormat(dto.PaperFormat.Value);
 
+            setting.PrintBackground = true;
             //var pattern = 0.393701;
             var pattern = 1;
 
